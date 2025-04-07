@@ -1,0 +1,22 @@
+.skills {
+    margin: 8rem 0;
+}
+.skills h1{
+    margin: 3rem auto;
+width: fit-content;
+}
+
+.skills .skills-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.skills .skills-box .skill {
+    border: 1px solid #ddd;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: #eeeeee8f;
+    border-radius: 0.6rem;
+    color: #777;
+    font-weight: bold;
+}
