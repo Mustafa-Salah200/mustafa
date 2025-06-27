@@ -1,6 +1,79 @@
-.projects {
-    
+.projects .top {
+  text-align: center;
 }
-.projects .project{
 
+.projects .top p {
+  margin: 2rem;
+  color: #777;
+}
+.projects .project {
+  max-width: 600px;
+  overflow: hidden;
+  display: flex;
+  gap: 2rem;
+  background-color: #f7f7f7;
+  margin: 2rem auto;
+  padding: 3rem;
+  border-radius: 0.8rem;
+  border: 1px solid #ddd;
+}
+.projects .project:hover {
+  background-color: #eeeeeeda;
+}
+.projects .project p {
+  margin: 1rem 0;
+  font-size: 14px;
+  color: #222;
+}
+.projects .project .project-skills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.projects .project .project-skills span {
+  padding: 0.6rem 1rem;
+  background-color: #ddd;
+  display: inline-block;
+  border: 1px solid #7777;
+  border-radius: 4rem;
+  font-size: 0.8em;
+}
+.projects .project .left {
+  width: 300px;
+}
+.projects .project img {
+  width: 400px;
+  height: 100%;
+  box-shadow: 0 0 19px 2px #77777759;
+  transition: 0.2s;
+  border-radius: 0.4rem;
+}
+.projects .project:hover img {
+  rotate: -4deg;
+  scale: 1.1;
+}
+.projects .project:hover img.image-revers {
+  rotate: 4deg;
+}
+.projects .project .image-revers {
+  position: relative;
+  left: -112px;
+}
+.show_more {
+  text-align: center;
+}
+.show_more button {
+  padding: 1rem 1rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media (max-width: 620px) {
+  .projects .project .left {
+    display: none;
+  }
 }

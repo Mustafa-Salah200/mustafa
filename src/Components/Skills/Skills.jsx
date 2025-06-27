@@ -1,5 +1,6 @@
 import React from 'react'
 import './Skills.css'
+import { motion } from 'framer-motion'
 const Skills = () => {
     const skills = ["HTML",
 "CSS",
@@ -23,12 +24,17 @@ const Skills = () => {
         <div className="skills-box">
             {
                 skills.map(skill=>{
-                    return <div className='skill' key={skill}>{skill}</div>
+                    return <motion.div className='skill' key={skill}
+                    initial={{y: "100px",scale:0.6}}
+                    whileInView={{y:"0",scale:1}}
+                    transition={{duration: 0.6}}
+                    >{skill}</motion.div>
                 })
             }
         </div>
     </div>
   )
 }
+
 
 export default Skills

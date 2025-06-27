@@ -1,5 +1,5 @@
 .landing {
-    margin: 3rem auto;
+    margin: 7rem auto 3rem;
     max-width: 460px;
     max-width: fit-content;
 }
@@ -7,12 +7,13 @@
     margin: auto;
 }
 .landing .info h1 {
-    font-size: 3rem;
+    font-size: 3.4rem;
     text-align: center;
 }
 .landing .info p {
     text-align: center;
     max-width: 500px;
+    margin: 1.4rem 0;
     color: #222;
 }
 .landing .contact-btns{
@@ -25,8 +26,7 @@
         margin: 1rem 0;
     
 }
-.landing .contact-btns span {
-    display: inline-block;
+.landing .contact-btns a {
     width: 20px;
     height: 20px;
     padding: 10px;
@@ -36,6 +36,7 @@
     border: 1px solid #ddd;
 }
 .landing .contact-btns button  {
+    cursor: pointer;
     display: flex
     ;
     align-items: center;
@@ -43,6 +44,7 @@
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     border: none;
+    transition: 0.2s;
 }
 .landing .contact-btns button.contact{
     background-color: #111827;
@@ -55,6 +57,14 @@
 .landing .contact-btns button  img {
     width: 20px;
 }
-.landing .contact-btns span img {
+.landing .contact-btns a img {
     width: 100%;
+}
+.landing .contact-btns a:hover {
+    scale: 1.1;
+}
+@media (max-width:400px){
+    .landing .info h1 {
+        font-size: 3rem;
+    }
 }

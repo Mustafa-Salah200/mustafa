@@ -1,19 +1,17 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Condensed Variable', sans-serif;
+  font-family: "Roboto Condensed Variable", sans-serif;
+  scroll-behavior: smooth;
+}
 
-}
-body {
-  /* background-color: #f7f7f7; */
-}
 :root {
   --main-color: #111827;
   --dark-color: #000;
   --white-color: #fff;
   --secondary-color: #eee;
   --bg-light-mode: #fff;
-  --bg-dark-mode: rgb(3 7 18/var(--tw-text-opacity));
+  --bg-dark-mode: rgb(3 7 18 / var(--tw-text-opacity));
 }
 .container {
   max-width: 900px;
@@ -24,8 +22,7 @@ body {
   text-align: center;
   margin: 9rem 0;
 }
-.about h1{
-  /* text-align: center; */
+.about h1 {
   margin: 1.7rem 0;
 }
 .about p {
