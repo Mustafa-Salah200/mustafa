@@ -3,6 +3,7 @@ import linkedin from './../../assets/linkedin.svg'
 import github from './../../assets/github.svg'
 import arrow1 from './../../assets/arrow2.svg'
 import arrow2 from './../../assets/arrow1.svg'
+import pdf from './../../assets/pdf/mustafa.pdf'
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import './Landing.css'
@@ -29,13 +30,17 @@ const Landing = () => {
           </motion.button>
           <motion.button className='cv'
           whileHover={{scale:1.1}}
-          >Download CV
-            
+          >
+            <a href={pdf} download
+            >Download CV
+
             <img src={arrow2} alt="" />
+            </a>
              </motion.button>
           <motion.a
 
           whileHover={{scale:1.1}}
+          href='https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ftoofy954%2F%3Figsh%3DMWUxMGlqYWF1aW5qdg%253D%253D&is_from_rle'
           >
             <img src={linkedin} alt="" />
           </motion.a>
